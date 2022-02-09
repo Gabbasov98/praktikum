@@ -349,9 +349,10 @@
         }
     }
     .info {
+        padding: 44px 0 54px;
+        text-align: center;
         &__inner {
-            padding: 44px 0 54px;
-            text-align: center;
+            padding: 0;
         }
         &__img {
             position: static;
@@ -405,11 +406,9 @@
         }
     }
     .detail {
-        background: linear-gradient(0deg, #F7F7F7, #F7F7F7), linear-gradient(90deg, #F76D41 0%, #A96EE4 100%);
         padding: 40px 0;
         &__title {
             font-size: 28px;
-            color: #212121;
         }
         &__items {
             margin-top: 130px;
@@ -421,10 +420,6 @@
         &__subtitle {
             margin-top: 35px;
             font-size: 24px;
-            color: #212121;
-            span {
-                color: #F76D41;
-            }
         }
         &__badge {
             margin-right: 32px;
@@ -456,12 +451,16 @@
 @media screen and (max-width: 370px) {
     .detail {
         &__item {
+            padding-top: 60px;
             &-icon {
                 width: 80px;
                 height: 80px;
                 img {
                     width: 50px;
                 }
+            }
+            &-text {
+                line-height: 125%;
             }
         }
     }

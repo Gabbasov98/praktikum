@@ -603,9 +603,12 @@ i {
 }
 
 @media screen and (max-width: 992px) {
-  .info__inner {
+  .info {
     padding: 44px 0 54px;
     text-align: center;
+  }
+  .info__inner {
+    padding: 0;
   }
   .info__img {
     position: static;
@@ -659,12 +662,10 @@ i {
   }
 
   .detail {
-    background: linear-gradient(0deg, #F7F7F7, #F7F7F7), linear-gradient(90deg, #F76D41 0%, #A96EE4 100%);
     padding: 40px 0;
   }
   .detail__title {
     font-size: 28px;
-    color: #212121;
   }
   .detail__items {
     margin-top: 130px;
@@ -676,10 +677,6 @@ i {
   .detail__subtitle {
     margin-top: 35px;
     font-size: 24px;
-    color: #212121;
-  }
-  .detail__subtitle span {
-    color: #F76D41;
   }
   .detail__badge {
     margin-right: 32px;
@@ -703,11 +700,17 @@ i {
   }
 }
 @media screen and (max-width: 370px) {
+  .detail__item {
+    padding-top: 60px;
+  }
   .detail__item-icon {
     width: 80px;
     height: 80px;
   }
   .detail__item-icon img {
     width: 50px;
+  }
+  .detail__item-text {
+    line-height: 125%;
   }
 }
